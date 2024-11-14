@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div id="wrapper">
+
+        <h1>Password Generator</h1>
+    
+        <div class="disply-password">
+
+            <input readonly class="random-pass" placeholder="Password" data-passwordDisplay>
+
+            <button data-copy class="btn">
+                <span data-copyMsg></span>
+                <i class="fa-regular fa-copy"></i>
+            </button>
+            
+
+
+        </div>
+
+        <!--Password lenght section-->
+
+        <div class="input-container">
+
+            <div class="pass-len-container">
+                <p>Password Length</p>
+                <span pass-lenNumber>0</span>
+            </div>
+
+            <!-- slider -->
+            <input type="range" class="slider" min="1" max="20" pass-lenSlider>
+
+            <!-- checkboxes -->
+
+            <div>
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Includes Uppercase letters</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Includes Lowercase letters</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="numbers">
+                <label for="numbers">Includes Numbers</label>
+            </div> 
+            
+            <div>
+                <input type="checkbox" id="symbols">
+                <label for="symbols">Includes Symbols</label>
+            </div>
+
+            <!-- strength-section -->
+
+            <div class="strength-container">
+                <p>Strength</p>
+                <div data-indicator></div>
+            </div>
+
+            <!-- generate-password-section -->
+
+            <button class="generate-btn">
+                Generate Password
+            </button>
+            
+        </div>
+
+        
+    </div>
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

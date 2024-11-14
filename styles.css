@@ -1,0 +1,81 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+#wrapper{
+    width: 90%;
+    max-width: 450px;
+}
+
+#wrapper h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.disply-password{
+    position: relative;
+    background-color: rgb(76, 76, 76);
+    border-radius: 1rem;
+    margin: 1rem 0;
+    padding-top: 0.35rem;
+    border-bottom: 0.35rem solid rgb(123, 123, 123);
+    display: flex;
+}
+
+.random-pass{
+    width: 100%;
+    background-color: transparent;
+    padding: 1.15rem 1rem;
+    border: none;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    line-height: 30px;
+    padding-right: 3.25rem;
+}
+
+.random-pass::placeholder{
+    position: absolute;
+    /* top: 50%; */
+    left: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+}
+
+
+.btn{
+    position: absolute;
+    background: transparent;
+    border: none;
+    right: 5%;
+    top: 40%;
+    
+    cursor: pointer;
+}
+
+.fa-copy{
+    font-size: 25px;
+    color: rgb(234, 227, 227);
+}
+
+.input-container{
+    
+}
