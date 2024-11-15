@@ -23,6 +23,8 @@ let checkboxCount = 0;
 handleSlider();
 // sets the lenght of the password using slider
 
+setIndicator("#ccc")
+
 function shufflePassword(array){
     //Fisher Yates Method
 
@@ -41,11 +43,17 @@ function shufflePassword(array){
 function handleSlider(){
     inputSlider.value = passwordLenght;
     displayLenght.innerText = passwordLenght;
+
+    const min = inputSlider.min;
+    const max = inputSlider.max;
+
+    inputSlider.style.backgroundSize = ((passwordLenght - min) * 100 / (max-min)) + "% 100%";
 }
 
 function setIndicator(color){
     indicator.style.backgroundColor = color;
     // shadow
+    indicator.style.boxShadow = `0px 0px 12px 1px ${color}`
 }
 
 function getRndInteger(min, max){
